@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #121;
+        }
+        .star{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255,255,255,.15);
+            clip-path: polygon(50% 0%, 61% 35%, 95% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%,
+             32% 57%, 2% 35%, 39% 35%);
+
+            transition: 5s ease-in-out;
+        }
+
+        .star:hover {
+            box-shadow: inset 0 0 50px 100px red;
+            transform: rotate(3600deg);
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="star"></div>
+
+</body>
+
+</html>
